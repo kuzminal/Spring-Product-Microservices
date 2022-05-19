@@ -1,4 +1,4 @@
-package ru.kuzmin.core.product;
+package ru.kuzmin.api.core.product;
 
 public class Product {
     private final int productId;
@@ -18,5 +18,21 @@ public class Product {
         this.name = name;
         this.weight = weight;
         this.serviceAddress = serviceAddress;
+    }
+
+    public int getProductId() {
+        return productId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getServiceAddress() {
+        return serviceAddress;
     }
 }
